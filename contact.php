@@ -41,9 +41,15 @@
 	  </div>
 	</nav><!--end of navbar-->
 
-	<form class="form-horizontal" role="form" method="post" action="index.php">
-    <div class="form-group">
-        <label for="name" class="col-sm-2 control-label">Name</label>
+	<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="text-center header">Contact us</legend>
+
+                        <label for="name" class="col-sm-2 control-label">Name</label>
         <div class="col-sm-10">
             <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
             <?php echo "<p class='text-danger'>$errName</p>";?>
@@ -80,7 +86,12 @@
             <?php echo $result; ?>    
         </div>
     </div>
-</form>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <style>
     .header {
