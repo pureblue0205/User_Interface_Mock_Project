@@ -4,7 +4,7 @@
         $email = $_POST['email'];
         $message = $_POST['message'];
         $human = intval($_POST['human']);
-        $from = 'javalos916@hotmail.com'; 
+        $from = $_POST['email']; 
         $to = 'javalos916@hotmail.com'; 
         $subject = 'Message from Contact Demo ';
         
