@@ -5,7 +5,7 @@
         $message = $_POST['message'];
         $human = intval($_POST['human']);
         $from = 'Demo Contact Form'; 
-        $to = '41a1b069b0da530f435a@cloudmailin.net'; 
+        $to = 'javalos916@hotmail.com'; 
         $subject = 'Message from Contact Demo ';
         
         $body ="From: $name\n E-Mail: $email\n Message:\n $message";
