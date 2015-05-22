@@ -50,6 +50,28 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   </head>
   <body>
+  <!--START OF NAVBAR-->
+     <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.php">Cole Heilborn Photography</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li><a href="index.php">Home</a></li>
+            <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="photo.html">Photography</a></li>
+                <li><a href="video.html">Videography</a></li>
+              </ul>
+            </li>-->
+            <li><a href="photo.php">Gallery</a></li>
+            <li class = "active"><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav><!--end of navbar-->
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
