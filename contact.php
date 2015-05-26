@@ -65,7 +65,7 @@
       </div>
     </nav><!--END OF NAVBAR-->
 
-    <div class="container">
+    <div class="container text-center">
     <div class="well well-large">
         <h2>Contact Us</h2>
         <div id="form-content" class="modal hide fade in" style="display: none;">

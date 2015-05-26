@@ -116,13 +116,21 @@
         <h4 class="modal-title">Modal Header</h4>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+        <form class="contact" name="contact">
+                    <label class="label" for="name">Your Name</label><br>
+                    <input type="text" name="name" class="input-xlarge"><br>
+                    <label class="label" for="email">Your E-mail</label><br>
+                    <input type="email" name="email" class="input-xlarge"><br>
+                    <label class="label" for="message">Enter a Message</label><br>
+                    <textarea name="message" class="input-xlarge"></textarea>
+                </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <input class="btn btn-success" type="submit" value="Send!" id="submit">
+        <a href="#" class="btn" data-dismiss="modal">Nah.</a>
       </div>
     </div>
-
+    	<div id="thanks"><p><a data-toggle="modal" href="#form-content" class="btn btn-primary btn-large">Contact Us</a></p></div>
   </div>
 </div>
 
