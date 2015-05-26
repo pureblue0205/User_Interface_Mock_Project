@@ -24,7 +24,7 @@ $(function() {
                     message: message
                 };
             $.ajax({
-                url: "components/php/submit_contact.php",
+                url: "submit_contact.php",
                 type: "POST",
                 data: {contact: ContactData},
                 cache: false,
