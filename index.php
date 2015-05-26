@@ -100,14 +100,15 @@
 </div> <!--END OF CAROUSEL-->
 
 
+
+<div class="container text-center">
+	<p>blah blah blah blah</p>
+</div>
 <!-- Trigger the modal with a button -->
 <div class= "container text-center">
 	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 </div> 
 
-<div class="container text-center">
-	<p>blah blah blah blah</p>
-</div>
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -116,7 +117,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <a class="close" data-dismiss="modal">×</a>
-        <h3>X</h3>
+        <h3>Contact Us</h3>
       </div>
       <div class="modal-body">
         <form class="contact" name="contact">
@@ -133,7 +134,7 @@
         <a href="#" class="btn" data-dismiss="modal">Nah.</a>
       </div>
     </div>
-    	<div id="thanks"><p><a data-toggle="modal" href="#form-content" class="btn btn-primary btn-large">Contact Us</a></p></div>
+    	<div id="thanks"><p><a data-toggle="modal" href="#form-content" class="btn btn-primary btn-large"></a></p></div>
   </div>
 </div>
 
