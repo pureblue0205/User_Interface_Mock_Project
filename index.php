@@ -117,11 +117,11 @@
       </div>
       <div class="modal-body">
         <form class="contact" name="contact">
-                    <label class="label" for="name">Your Name</label><br>
+                    <label class="label" for="name" color="black">Your Name</label><br>
                     <input type="text" name="name" class="input-xlarge"><br>
-                    <label class="label" for="email">Your E-mail</label><br>
+                    <label class="label" for="email" color="black">Your E-mail</label><br>
                     <input type="email" name="email" class="input-xlarge"><br>
-                    <label class="label" for="message">Enter a Message</label><br>
+                    <label class="label" for="message" color="black">Enter a Message</label><br>
                     <textarea name="message" class="input-xlarge"></textarea>
                 </form>
       </div>
