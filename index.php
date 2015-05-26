@@ -105,6 +105,9 @@
 	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 </div> 
 
+<div class="container text-center">
+	<p>blah blah blah blah</p>
+</div>
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -112,8 +115,8 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>X</h3>
       </div>
       <div class="modal-body">
         <form class="contact" name="contact">
