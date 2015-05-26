@@ -1,48 +1,48 @@
-    <!doctype html>
+<!-- Author: Michael Milstead / Mode87.com
+     for Untame.net
+     Twitter Bootstrap Tutorial
+     Modal Contact Demo, 2013
+-->
 
-    <html>
-    <head>
-    <meta charset="UTF-8">
-    <title>Cole Heilborn</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Twitter Bootstrap Modal Contact Form Demo</title>
+    <meta name="description" content="Creating Modal Window with Twitter Bootstrap">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/agency.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-    <link type="text/css" href="site.css" rel="stylesheet">
-
-
-    <meta name="description" content="Sharing My Love For Cycling">
-    <meta name="keywords" content="Photography, Cycling, Bycicles, Roadbike, Washington">
-    <style type="text/css">
-
-    $(document).ready(function () {
-    $("input#submit").click(function(){
-        $.ajax({
-            type: "POST",
-            url: "process.php", //process to mail
-            data: $('form.contact').serialize(),
-            success: function(msg){
-                $("#thanks").html(msg) //hide button and show thank you
-                $("#form-content").modal('hide'); //hide popup  
-            },
-            error: function(){
-                alert("failure");
-            }
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("input#submit").click(function(){
+                $.ajax({
+                    type: "POST",
+                    url: "process.php", // 
+                    data: $('form.contact').serialize(),
+                    success: function(msg){
+                        $("#thanks").html(msg)
+                        $("#form-content").modal('hide');   
+                    },
+                    error: function(){
+                        alert("failure");
+                    }
+                });
+            });
         });
-    });
-});
+    </script>
 
+    <style type="text/css">
+        body { margin: 50px; background: url(assets/bglight.png); }
+        .well { background: #fff; text-align: center; }
+        .modal { text-align: left; }
     </style>
-    </head>
 
-    <body>
+</head>
+<body>
 
-    <!--START OF NAVBAR-->
+<!--START OF NAVBAR-->
      <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -58,14 +58,14 @@
               </ul>
             </li>-->
             <li><a href="photo.php">Gallery</a></li>
-            <li><a href="about.php">About</a></li>
-            <li class="active"><a href="contact.php">Contact</a></li>
+            <li class = "active"><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
         </div>
       </div>
-    </nav><!--END OF NAVBAR-->
+    </nav><!--end of navbar-->
 
-    <div class="container">
+<div class="container">
     <div class="well well-large">
         <h2>Twitter Bootstrap Modal Contact Form Demo</h2>
         <div id="form-content" class="modal hide fade in" style="display: none;">
@@ -91,10 +91,6 @@
         <div id="thanks"><p><a data-toggle="modal" href="#form-content" class="btn btn-primary btn-large">Modal powers, activate!</a></p></div>
     </div>
 </div>
-            
-    </script> 
-    <footer id="foot01"></footer>
-    <script type="text.javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="./script.js"></script>
-    </body>
-    </html>
+
+</body>
+</html>
