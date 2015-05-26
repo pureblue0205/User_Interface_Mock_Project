@@ -1,3 +1,7 @@
+label{
+    font-family: "sans-serif";
+    color: lightgray;
+}
 body {
     font-family: "Trebuchet MS", Verdana, sans-serif;
     font-size: 16px;
