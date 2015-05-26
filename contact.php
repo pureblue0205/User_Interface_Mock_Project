@@ -72,53 +72,58 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
         </div>
       </div>
     </nav><!--end of navbar-->
+    <section id="contact">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h1 class="page-header text-center">Contact Form Example</h1>
-                <form class="form-horizontal" role="form" method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
-                    <div class="form-group">
-                        <label for="name" class="col-sm-2 control-label">Name</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-                            <?php echo "<p class='text-danger'>$errName</p>";?>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-                            <?php echo "<p class='text-danger'>$errEmail</p>";?>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message" class="col-sm-2 control-label">Message</label>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
-                            <?php echo "<p class='text-danger'>$errMessage</p>";?>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-                            <?php echo "<p class='text-danger'>$errHuman</p>";?>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-10 col-sm-offset-2">
-                            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-10 col-sm-offset-2">
-                            <?php echo $result; ?>  
-                        </div>
-                    </div>
-                </form> 
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Contact Us</h2>
+
+                <h3 class="section-subheading text-muted">If you have any questions or ideas contact us below</h3>
             </div>
         </div>
-    </div>   
+        <div class="row">
+            <div class="col-lg-12">
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name *" id="name" required
+                                       data-validation-required-message="Please enter your name." name="contact[name]">
+
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email *" id="email" required
+                                       data-validation-required-message="Please enter your email address."  name="contact[email]">
+
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required
+                                       data-validation-required-message="Please enter your phone number."  name="contact[phone]">
+
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Your Message *" id="message" required
+                                          data-validation-required-message="Please enter a message."  name="contact[message]"></textarea>
+
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <input type="submit" class="btn btn-xl" value="Send Message"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   </body>
