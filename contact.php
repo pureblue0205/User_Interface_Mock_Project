@@ -47,21 +47,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <meta name="description" content="Bootstrap contact form with PHP example by BootstrapBay.com.">
     <meta name="author" content="BootstrapBay.com">
     <title>Bootstrap Contact Form With PHP Example</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/agency.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-	<link type="text/css" href="site.css" rel="stylesheet">
-
-
-	<meta name="description" content="Sharing My Love For Cycling">
-	<meta name="keywords" content="Photography, Cycling, Bycicles, Roadbike, Washington">
-	<style type="text/css">
-
-	</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   </head>
   <body>
   <!--START OF NAVBAR-->
@@ -80,8 +66,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
               </ul>
             </li>-->
             <li><a href="photo.php">Gallery</a></li>
-            <li><a href="about.php">About</a></li>
-            <li class = "active"><a href="contact.php">Contact</a></li>
+            <li class = "active"><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -135,6 +121,5 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     </div>   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
   </body>
 </html>
