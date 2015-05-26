@@ -1,5 +1,5 @@
 <?php
-require_once '../../includes/PHP-Multi-SQL/classes/MySQL.class.php';
+require_once '../../PHP-Multi-SQL/classes/MySQL.class.php';
 $db = new MySQL('192.185.35.74', 'pmphotog_Startup', 'CWUStartup2015', 'pmphotog_cwuStartup');
 if(isset($_POST['contact']['name'])){
    $Name = $_POST['contact']['name'];
