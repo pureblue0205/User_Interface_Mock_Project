@@ -12,13 +12,29 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
+<script>
+		$(document).ready(function () {
+			$("input#submit").click(function(){
+				$.ajax({
+					type: "POST",
+					url: "process.php", // 
+					data: $('form.contact').serialize(),
+					success: function(msg){
+						$("#thanks").html(msg)
+						$("#form-content").modal('hide');	
+					},
+					error: function(){
+						alert("failure");
+					}
+				});
+			});
+		});
+    </script>
 	<link type="text/css" href="site.css" rel="stylesheet">
 
 
 	<meta name="description" content="Sharing My Love For Cycling">
 	<meta name="keywords" content="Photography, Cycling, Bycicles, Roadbike, Washington">
-	<style type="text/css">
 
 	</style>
 
