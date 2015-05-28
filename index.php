@@ -30,6 +30,12 @@
 			});
 		});
     </script>
+    
+	<style type="text/css">
+		body { margin: 50px; background: url(assets/bglight.png); }
+		.well { background: #fff; text-align: center; }
+		.modal { text-align: left; }
+	</style>
 	<link type="text/css" href="site.css" rel="stylesheet">
 
 
@@ -121,40 +127,33 @@
 <div class="container text-center">
 	<p>blah blah blah blah</p>
 </div>
-<!-- Trigger the modal with a button -->
-<div class= "container text-center">
-	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-</div> 
 
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <a class="close" data-dismiss="modal">×</a>
-        <h3>Contact Us</h3>
-      </div>
-      <div class="modal-body">
-        <form class="contact" name="contact">
-                    <label class="label" for="name" placeholder="Enter your name">Your Name</label><br>
-                    <input type="text" name="name" class="input-xlarge"><br>
-                    <label class="label" for="email" placeholder="Enter your email">Your E-mail</label><br>
-                    <input type="email" name="email" class="input-xlarge"><br>
-                    <label class="label" for="message" placeholder="Enter your message">Enter a Message</label><br>
-                    <textarea name="message" class="input-xlarge"></textarea>
-                </form>
-      </div>
-      <div class="modal-footer">
-        <input class="btn btn-success" type="submit" value="Send!" id="submit">
-        <a href="#" class="btn" data-dismiss="modal">Nah.</a>
-      </div>
-    </div>
-    	<div id="thanks"><p><a data-toggle="modal" href="#form-content" class="btn btn-primary btn-large"></a></p></div>
-  </div>
+<div class="container">
+	<div class="well well-large">
+		<h2>Twitter Bootstrap Modal Contact Form Demo</h2>
+		<div id="form-content" class="modal hide fade in" style="display: none;">
+			<div class="modal-header">
+				<a class="close" data-dismiss="modal">×</a>
+				<h3>Send me a message</h3>
+			</div>
+			<div class="modal-body">
+				<form class="contact" name="contact">
+					<label class="label" for="name">Your Name</label><br>
+					<input type="text" name="name" class="input-xlarge"><br>
+					<label class="label" for="email">Your E-mail</label><br>
+					<input type="email" name="email" class="input-xlarge"><br>
+					<label class="label" for="message">Enter a Message</label><br>
+					<textarea name="message" class="input-xlarge"></textarea>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<input class="btn btn-success" type="submit" value="Send!" id="submit">
+				<a href="#" class="btn" data-dismiss="modal">Nah.</a>
+			</div>
+		</div>
+		<div id="thanks"><p><a data-toggle="modal" href="#form-content" class="btn btn-primary btn-large">Modal powers, activate!</a></p></div>
+	</div>
 </div>
-
 			 
 	</script> 
 	<footer id="foot01"></footer>
