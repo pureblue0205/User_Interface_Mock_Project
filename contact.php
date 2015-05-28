@@ -70,8 +70,8 @@
         <h2>Contact Us</h2>
         <div id="form-content" class="modal hide fade in" style="display: none;">
             <div class="modal-header">
-                <a class="close" data-dismiss="modal">×</a>
-                <h3>Here</h3>
+                <a class="close" data-dismiss="modal"></a>
+                <h3></h3>
             </div>
             <div class="modal-body">
                 <form class="contact" name="contact">
@@ -85,10 +85,10 @@
             </div>
             <div class="modal-footer">
                 <input class="btn btn-success" type="submit" value="Send!" id="submit">
-                <a href="#" class="btn" data-dismiss="modal">Nah.</a>
+                <a href="#" class="btn" data-dismiss="modal">Cancel</a>
             </div>
         </div>
-        <div id="thanks"><p><a data-toggle="modal" href="#form-content" class="btn btn-primary btn-large">Modal powers, activate!</a></p></div>
+        <div id="thanks"><p><a data-toggle="modal" href="#form-content" class="btn btn-primary btn-large">Contact</a></p></div>
     </div>
 </div>
             
