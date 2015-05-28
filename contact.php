@@ -67,8 +67,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
               </ul>
             </li>-->
             <li><a href="photo.php">Gallery</a></li>
-            <li class = "active"><a href="about.php">About</a></li>
-            <li><a href="contact.php">Contact</a></li>
+            <li><a href="about.php">About</a></li>
+            <li class = "active"><a href="contact.php">Contact</a></li>
           </ul>
         </div>
       </div>
