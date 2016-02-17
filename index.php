@@ -18,9 +18,9 @@
 
 	<meta name="description" content="Sharing My Love For Cycling">
 	<meta name="keywords" content="Photography, Cycling, Bycicles, Roadbike, Washington">
-	<style type="text/css">
 
 	</style>
+
 	</head>
 
 	<body>
@@ -98,6 +98,12 @@
         <span class="sr-only">Next</span>
     </a>
 </div> <!--END OF CAROUSEL-->
+
+
+
+<div class="container text-center">
+
+</div>
 
 
 			 

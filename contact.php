@@ -44,13 +44,14 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Bootstrap contact form with PHP example by BootstrapBay.com.">
+    <meta name="description" content="Contact Us">
     <meta name="author" content="BootstrapBay.com">
-    <title>Bootstrap Contact Form With PHP Example</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   </head>
   <body>
   <!--START OF NAVBAR-->
+  <!--LETS SEE HOW THIS WORKS-->
      <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -66,8 +67,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
               </ul>
             </li>-->
             <li><a href="photo.php">Gallery</a></li>
-            <li class = "active"><a href="about.php">About</a></li>
-            <li><a href="contact.php">Contact</a></li>
+            <li><a href="about.php">About</a></li>
+            <li class = "active"><a href="contact.php">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -124,6 +125,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
         </div>
     </div>
 </section>   
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   </body>
